@@ -32,7 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo "github actions" >> text03.txt
+          echo "github actions test" >> text03.txt
           cat text03.txt
 
       - name: connect
