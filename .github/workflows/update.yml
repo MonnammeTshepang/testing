@@ -35,4 +35,5 @@ jobs:
           echo "github actions" >> text03.txt
           cat text03.txt
           git commit -a -m "#updated"
-          
+          git config --global user.name "Tshepang"
+          git config --global user.email tshepangd08@gmail.com
