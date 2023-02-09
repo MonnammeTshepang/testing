@@ -34,6 +34,9 @@ jobs:
         run: |
           echo "github actions" >> text03.txt
           cat text03.txt
-          git commit -a -m "#updated"
+
+      - name: connect
+        run: |
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
+          git commit -a -m "#updated"
