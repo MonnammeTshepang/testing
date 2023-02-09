@@ -40,3 +40,7 @@ jobs:
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
           git commit -a -m "#updated"
+
+      - name: push changes
+        run: |
+          git push origin main
