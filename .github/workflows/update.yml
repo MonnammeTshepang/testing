@@ -36,4 +36,4 @@ jobs:
           cat text03.txt
           git commit -a -m "#updated"
           git config --global user.name "TSHEPANG"
-          git config --global user.email tshepangd08@gmail.com
+          git config --global user.email "tshepangd08@gmail.com"
