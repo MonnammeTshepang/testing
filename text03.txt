@@ -12,8 +12,12 @@ hello world
 
 github actions test
 github actions test
+<<<<<<< HEAD
 =======
 -------------------
 HELLO WOLRD
 -------------------
 >>>>>>> testbranch2
+=======
+github actions test
+>>>>>>> e0cfcd0f9bcae7c30ed395f331817171e5450f10
