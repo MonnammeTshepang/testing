@@ -33,13 +33,15 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "github actions test" >> text03.txt
+          echo "github actions #1" >> New.txt
           cat text03.txt
+          cat New.txt
 
       - name: connect
         run: |
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
-          git commit -a -m "#updated"
+          git commit -a -m "ran update"
 
       - name: push changes
         run: |
