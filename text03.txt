@@ -5,9 +5,15 @@ now main
 edited in Github
 changes from intellij
 github actions test
+<<<<<<< HEAD
 thursday
 github actions test
 hello world
 
 github actions test
 github actions test
+=======
+-------------------
+HELLO WOLRD
+-------------------
+>>>>>>> testbranch2
