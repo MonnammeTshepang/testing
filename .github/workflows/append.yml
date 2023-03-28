@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
-          git -a -m "commited"
+          git commit -a -m "commited"
           
       - name: push
         run: |
