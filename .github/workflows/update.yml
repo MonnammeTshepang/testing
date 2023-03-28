@@ -43,7 +43,7 @@ jobs:
           echo "github actions #1" >> New.txt
           cat text03.txt
           cat New.txt
-          
+
       - name: commit changes
         run: |
           git commit -a -m "ran update"
