@@ -39,10 +39,9 @@ jobs:
         run: |
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
-          git add .
-          git commit -m "commited"
+          git -a -m "commited"
           
-      - name: ADD & COMMIT
+      - name: push
         run: |
           git push origin main
 
