@@ -45,4 +45,5 @@ jobs:
 
       - name: push changes
         run: |
+          gig pull
           git push origin main
