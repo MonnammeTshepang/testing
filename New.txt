@@ -1,5 +1,1 @@
-new filegithub actions #1
-<<<<<<< HEAD
-new filegithub actions #2
 
-Tshepang
