@@ -30,10 +30,10 @@ jobs:
         run: |
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
-          git commit -a -m "ran update"
+          
 
       # Runs a single command using the runners shell
-      - name: pull 
+      - name: pull
         run: git pull
 
       # Runs a set of commands using the runners shell
@@ -43,7 +43,10 @@ jobs:
           echo "github actions #1" >> New.txt
           cat text03.txt
           cat New.txt
-
+          
+      - name: commit changes
+        run: |
+          git commit -a -m "ran update"
 
 
       - name: push changes
