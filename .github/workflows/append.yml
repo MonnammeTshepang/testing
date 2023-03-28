@@ -1,0 +1,48 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI2
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main","testbranch" ]
+  pull_request:
+    branches: [ "main","testbranch" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: one-line script
+        run: echo Hello, Tshepang!
+
+      # Runs a set of commands using the runners shell
+      - name: multi-line script
+        run: |
+          echo "pushed changes" >> tshepang.txt
+          cat tshepang.txt
+          
+      - name: Set global variables
+        run: |
+          git config --global user.name "TSHEPANG"
+          git config --global user.email "tshepangd08@gmail.com"
+          
+      - name: ADD & COMMIT
+        run: |
+          git add .
+          git commit -m "commited"
+          
+          
