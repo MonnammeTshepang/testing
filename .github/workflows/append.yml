@@ -55,7 +55,6 @@ jobs:
           git push origin main
 
       - name: class update.yml
-        uses: .\.github\workflows\update.yml
+        uses: testing/.github/workflows/update.yml
 
-          
           
