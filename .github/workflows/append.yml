@@ -15,7 +15,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_run:
-    workflows: [ "CI2" ]
+    workflows: [ "CI" ]
     types:
       - completed
 
