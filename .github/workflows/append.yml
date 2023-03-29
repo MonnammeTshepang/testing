@@ -52,7 +52,5 @@ jobs:
         run: |
           git push origin main
 
-      - name: class update.yml
-        uses: .github/workflows/update.yml
 
 
