@@ -110,7 +110,7 @@ resource "aws_eip" "elastic_IP" {
 resource "aws_instance" "instance-1" {
   ami           = "ami-0ec7f9846da6b0f61"
   instance_type = "t2.micro"
-  key_name      = "EC2-keys"
+  key_name      = "key"
 
   network_interface {
     device_index         = 0
@@ -128,31 +128,6 @@ resource "aws_instance" "instance-1" {
     Name = "My-instance"
   }
 }
-
-resource "aws_route53_resolver_endpoint" "foo" {
-  name      = "foo"
-  direction = "INBOUND"
-
-  security_group_ids = [
-    aws_security_group.allow_ingress-egress.id
-  ]
-
-  ip_address {
-    subnet_id = aws_subnet.my_subnet.id
-  }
-
-  ip_address {
-    subnet_id = aws_subnet.my_subnet.id
-    ip        = "172.16.10.31"
-  }
-
-  tags = {
-    Environment = "Prod"
-  }
-}
-
-
-
 
 #------------------------
 # 1. Create VPC
