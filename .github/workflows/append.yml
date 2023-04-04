@@ -25,16 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-
       - name: global variables
         run: |
           git config --global user.name "TSHEPANG"
           git config --global user.email "tshepangd08@gmail.com"
           
-
-     # - name: pull
-      #  run: |
-       #   git pull
 
       # Runs a single command using the runners shell
       - name: one-line script
