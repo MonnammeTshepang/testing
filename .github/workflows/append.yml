@@ -53,6 +53,11 @@ jobs:
       - name: push
         run: |
           git push origin main
-
+      - name: test github output
+        id: messsage
+        run: |
+           echo "this is the output0">> GITHUB_OUTPUT
+      - name: print the github output
+        run: echo ${{ steps.message.outputs.name }}
 
 
