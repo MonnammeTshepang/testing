@@ -56,7 +56,7 @@ jobs:
       - name: test github output
         id: messsage
         run: |
-           "TSHEPANG" >>$GITHUB_OUTPUT
+           echo TSHEPANG >>$GITHUB_OUTPUT
       - name: print the github output
         run: echo ${{ steps.message.outputs.name }}
 
