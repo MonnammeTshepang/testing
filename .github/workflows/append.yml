@@ -52,7 +52,7 @@ jobs:
 
       - name: push
         run: |
-          git push origin main
+          git push origin testbranch
       - name: test github output
         id: messsage
         run: |
